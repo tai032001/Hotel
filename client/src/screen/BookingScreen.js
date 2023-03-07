@@ -80,7 +80,7 @@ function BookingScreen() {
         `//localhost:5000/api/booking/bookRoom`,
         bookingDetails
       );
-      console.log(res.data);
+      console.log(res);
       Swal.fire("Congratulation", "Booked successfully", "success");
       navigate("/home");
     } catch (error) {
